@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Riskstep extends Model
+{
+    use HasFactory;
+
+    public function mainrisks()
+    {
+        return $this->hasMany(Mainrisk::class);
+    }
+}
